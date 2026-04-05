@@ -143,7 +143,6 @@ export function AddExpenseModal({ categories, onSave, onClose }: Props) {
                     backgroundColor: `${cat.color}15`,
                     color: cat.color,
                     borderColor: `${cat.color}40`,
-                    ringColor: `${cat.color}50`,
                   } : {}}
                 >
                   {cat.name}
