@@ -1,0 +1,35 @@
+/* СНАЧАЛА импорт */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&family=DM+Mono:wght@400;500&display=swap');
+
+/* потом tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* дальше твои стили */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.modal-enter {
+  animation: modalIn 0.25s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+
+@keyframes modalIn {
+  from { opacity:0; transform:scale(0.96) translateY(16px); }
+  to { opacity:1; transform:scale(1) translateY(0); }
+}
