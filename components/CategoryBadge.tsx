@@ -16,7 +16,6 @@ export function CategoryBadge({ category, size = 'md' }: Props) {
       style={{
         backgroundColor: `${category.color}18`,
         color: category.color,
-        ringColor: `${category.color}40`,
         border: `1px solid ${category.color}30`,
       }}
     >
