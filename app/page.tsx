@@ -107,7 +107,9 @@ export default function HomePage() {
                     <ExpenseTable
                       expenses={filtered}
                       categories={categories}
-                      onUpdate={update}
+                      onUpdate={async (id, patch) => {
+  await update(id, patch)
+}}
                       onDelete={remove}
                     />
                   </div>
